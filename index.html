@@ -3,132 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiddo</title>
+    <title>Kiddo Burger House — Las mejores hamburguesas</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Kiddo Burger House: hamburguesas con identidad propia. Ingredientes frescos, recetas únicas y una experiencia que va más allá de comer.">
+    <meta name="keywords" content="hamburguesas, burger, kiddo, comida, restaurant">
+    <meta name="author" content="Kiddo Burger House">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kiddo Burger House">
+    <meta property="og:description" content="Hamburguesas con identidad propia. Ingredientes frescos, recetas únicas.">
+    <meta property="og:image" content="./img/burger-event.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/logo.png">
+
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+
 <!-- HEADER -->
     <section class="hero">
         <header class="hero__header">
             <div class="header__left">
-                <img src="./img/kiddo_encabezado.svg" alt="" class="logo__img">
+                <img src="./img/kiddo_encabezado.svg" alt="Kiddo Burger House — Logo" class="logo__img">
             </div>
             <div class="header__right">
-                <nav>
+                <button class="menu__toggle" aria-label="Abrir menú" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </button>
+                <nav id="main-nav">
                     <ul class="menu">
-                        <li class="menu__item"><a href="">Inicio</a></li>
-                        <li class="menu__item"><a href="">Menu</a></li>
-                        <li class="menu__item"><a href="">Nosotros</a></li>
-                        <li class="menu__item"><a href="">Contactanos</a></li>
+                        <li class="menu__item"><a href="#inicio">Inicio</a></li>
+                        <li class="menu__item"><a href="#menu">Menú</a></li>
+                        <li class="menu__item"><a href="#nosotros">Nosotros</a></li>
+                        <li class="menu__item"><a href="#contacto">Contactanos</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="hero__main">
+        <div class="hero__main" id="inicio">
             <div class="hero__text">
                 <h4>Es un buen momento para el gran sabor de las</h4>
                 <h2>HAMBURGUESAS</h2>
                 <h2 class="kiddo">KIDDO</h2>
             </div>
             <div class="hero__img">
-                <img src="./img/bg6.png" alt="">
+                <img src="./img/bg6.png" alt="Hamburguesa Kiddo con papas fritas">
             </div>
         </div>
     </section>
+
 <!-- PRESENTACIÓN -->
-    <div class="presentacion">
-        <img src="./img/logo.png" alt="">
+    <div class="presentacion" id="nosotros">
+        <img src="./img/logo.png" alt="Logo Kiddo Burger House">
         <h1>KIDDO</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi architecto, ipsa nostrum beatae soluta natus, nulla doloremque dolorem blanditiis ipsam, at iste veniam esse! Facilis, laudantium? Molestiae, veritatis velit.</p>
+        <p>Somos más que una hamburguesería. Somos el lugar donde cada mordida cuenta una historia. Ingredientes frescos, recetas propias y una pasión genuina por hacer la mejor hamburguesa de la ciudad.</p>
     </div>
+
 <!-- SLIDER INFINITO-->
-    <div class="slider">
+    <div class="slider" aria-label="Nuestras especialidades">
         <div class="slide-track">
-            <div class="slide">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="slide">
-                <p>CHEESEBURGER</p>
-            </div>
-            <div class="slide">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="slide">
-                <p>MELVIN</p>
-            </div>
-            <div class="slide">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="slide">
-                <p>PARK</p>
-            </div>
-            <div class="slide">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="slide">
-                <p>CHEESEBURGER</p>
-            </div>
-            <div class="slide">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="slide">
-                <p>MELVIN</p>
-            </div>
-            <div class="slide">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="slide">
-                <p>PARK</p>
-            </div>
+            <div class="slide"><img src="./img/logo.png" alt="Logo Kiddo"></div>
+            <div class="slide"><p>CHEESEBURGER</p></div>
+            <div class="slide"><img src="./img/logo.png" alt="Logo Kiddo"></div>
+            <div class="slide"><p>MELVIN</p></div>
+            <div class="slide"><img src="./img/logo.png" alt="Logo Kiddo"></div>
+            <div class="slide"><p>PARK</p></div>
+            <div class="slide"><img src="./img/logo.png" alt="Logo Kiddo"></div>
+            <div class="slide"><p>CHEESEBURGER</p></div>
+            <div class="slide"><img src="./img/logo.png" alt="Logo Kiddo"></div>
+            <div class="slide"><p>MELVIN</p></div>
+            <div class="slide"><img src="./img/logo.png" alt="Logo Kiddo"></div>
+            <div class="slide"><p>PARK</p></div>
         </div>
     </div>
+
 <!-- MENU -->
-    <section class="enjoy">
+    <section class="enjoy" id="menu">
         <div class="titles">
             <h2>ELIGE Y DISFRUTA NUESTRO MENÚ</h2>
-            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Tempora nulla illo expedita atque quisquam non quas debitis impedit, praesentium repellendus! Dignissimos nihil fuga omnis eveniet consequatur, consectetur odio totam sed!</P>
+            <p>Tres propuestas distintas, una sola obsesión: el sabor.<br>
+            Cada hamburguesa fue diseñada para dejar huella. ¿Cuál es la tuya?</p>
         </div>
         <div class="cards">
             <div class="card">
-                <img src="./img/bg2.jpg" alt="">
+                <img src="./img/bg2.jpg" alt="Hamburguesa Park — doble carne con pickles y mostaza">
                 <h4>PARK</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#">AGREGAR</a>
+                <p>Doble carne, pickles caseros, cheddar fundido y nuestra salsa secreta. La clásica reinventada.</p>
+                <a href="#contacto">AGREGAR</a>
             </div>
             <div class="card">
-                <img src="./img/bg3.jpg" alt="">
+                <img src="./img/bg3.jpg" alt="Hamburguesa Melvin — crispy con jalapeños">
                 <h4>MELVIN</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#">AGREGAR</a>
+                <p>Pollo crispy, jalapeños, coleslaw y mayonesa de limón. Para los que buscan algo diferente.</p>
+                <a href="#contacto">AGREGAR</a>
             </div>
             <div class="card">
-                <img src="./img/bg4.jpg" alt="">
+                <img src="./img/bg4.jpg" alt="Hamburguesa Cheeseburger — clásica con triple queso">
                 <h4>CHEESEBURGER</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#">AGREGAR</a>
+                <p>Triple queso, carne premium y pan brioche tostado. La que todos vuelven a pedir.</p>
+                <a href="#contacto">AGREGAR</a>
             </div>
         </div>
         <div class="titles">
             <h4>ACOMPAÑAMIENTOS</h4>
         </div>
     </section>
+
 <!-- EVENTOS -->
     <section class="events">
         <div class="inner">
             <div class="inner__left">
                 <h4>DESCUBRÍ</h4>
-                <h2>PROXIMO EVENTO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi eligendi nesciunt neque modi rerum iure, debitis facere non eveniet placeat quis laboriosam eaque aliquam, fugit voluptatem accusantium! Esse, iure!</p>
+                <h2>PRÓXIMO EVENTO</h2>
+                <p>Este sábado en Kiddo: noche de burger battles. Tres chefs, tres recetas secretas, una sola ganadora elegida por vos. Entrada libre, consumición mínima. ¡No te lo pierdas!</p>
             </div>
             <div class="inner__right">
-                <img src="./img/burger-event.jpg" alt="">
+                <img src="./img/burger-event.jpg" alt="Evento especial Kiddo — Burger Battle Night">
             </div>
         </div>    
     </section>
+
 <!-- OTROS -->
     <div class="reservation__heading__grid">
-        <h4>COMPARTI</h4>
+        <h4>COMPARTÍ</h4>
         <h2>MAS QUE HAMBURGUESAS</h2>
     </div>
     <section class="grid">
@@ -137,51 +138,66 @@
             <h4>PLAYLIST</h4>
         </div>
         <div class="grid__item item2">
-            <h5>ENCONTRA NUESTRO</h5>
+            <h5>ENCONTRÁ NUESTRO</h5>
             <h4>MERCH</h4>
         </div>
         <div class="grid__item item3">
-            <h5>MIRA</h5>
-            <h4>GALERIA DE ARTE</h4>
+            <h5>MIRÁ</h5>
+            <h4>GALERÍA DE ARTE</h4>
         </div>
     </section>
+
 <!-- CONTACTOS -->
-    <section class="reservation">
+    <section class="reservation" id="contacto">
         <div class="reservation__heading">
             <h4>CONTACTANOS</h4>
             <h2>PARA MAS INFORMACIÓN</h2>
         </div>
         <form class="reservation__form">
-            <input class="text" type="text" placeholder="name" name="name">
-            <input class="email" type="email" placeholder="email" name="email">
-            <input class="date" type="text" placeholder="date" name="date" onfocus="(this.type='date')" onblur="(this.type='text')">
-            <input class="time" type="text" placeholder="time" name="time" onfocus="(this.type='time')" onblur="(this.type='text')">
-            <input class="text" type="text" placeholder="people" name="people">
-            <input class="button" type="button" value="Find a table">
+            <input class="text" type="text" placeholder="Nombre" name="name" aria-label="Nombre">
+            <input class="email" type="email" placeholder="Email" name="email" aria-label="Email">
+            <input class="date" type="text" placeholder="Fecha" name="date" onfocus="(this.type='date')" onblur="(this.type='text')" aria-label="Fecha">
+            <input class="time" type="text" placeholder="Hora" name="time" onfocus="(this.type='time')" onblur="(this.type='text')" aria-label="Hora">
+            <input class="text" type="number" placeholder="Personas" name="people" min="1" max="20" aria-label="Cantidad de personas">
+            <input class="button" type="button" value="Reservar mesa" onclick="alert('¡Reserva recibida! Te contactamos pronto.')">
         </form>
     </section>
+
 <!-- FOOTER -->
     <footer>
         <div class="footer">
             <div class="footer__top">
                 <div>
                     <div class="footer__top__title">
-                        <img src="./img/logo.png" alt="">
-                        <h2>BURGER HOUSE</h2>
+                        <img src="./img/logo.png" alt="Logo Kiddo Burger House">
+                        <h2>KIDDO BURGER</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nihil a repellendus, voluptatem error soluta possimus id dolorem, molestias, voluptas placeat itaque? Veniam voluptate eos, libero debitis iusto nostrum facere?</p>
+                    <p>Más que una hamburguesería, un lugar para vivir. Desde 2018 hacemos hamburguesas con alma propia, ingredientes frescos y una bienvenida que te hace volver.</p>
                 </div>
                 <div class="adress">
-                    <p><i class="bi bi-geo-alt-fill"></i>MAIN ROAD, BUILDING NAME, COUNTRY<br><i class="bi bi-envelope"></i>NFO@COMPANYNAME.COM</p>
+                    <p>
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Av. Corrientes 1234, Buenos Aires<br>
+                        <i class="bi bi-envelope" aria-hidden="true"></i>hola@kiddoburger.com
+                    </p>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>©COMPANY NAME 2024.ALL RIGHTS RESERVED.</p>
+                <p>©KIDDO BURGER HOUSE 2024. TODOS LOS DERECHOS RESERVADOS.</p>
                 <div>
-                    <i class="bi bi-instagram"></i>
+                    <a href="https://instagram.com" aria-label="Instagram de Kiddo Burger" target="_blank" rel="noopener">
+                        <i class="bi bi-instagram"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('main-nav');
+        nav.classList.toggle('open');
+    }
+</script>
+
 </body>
 </html>
