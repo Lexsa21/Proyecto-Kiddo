@@ -2,25 +2,18 @@
 
 Landing page para una hamburguesería con identidad visual fuerte, animaciones en CSS puro y diseño responsive.
 
-![Kiddo Preview](./img/kiddo_encabezado.svg)
-
-## 🔗 Demo en vivo
-
-> Subí el proyecto a GitHub Pages y pegá el link acá:
-> `https://tu-usuario.github.io/kiddo-burger`
-
 ---
 
 ## ✨ Características
 
-- **Hero animado** con tipografía display y gradiente de marca
-- **Slider infinito** construido solo con CSS `@keyframes` (sin JavaScript)
-- **Cards del menú** con efecto hover `scale + translateY`
-- **Grid asimétrico** para la sección de experiencias
-- **Formulario de reserva** con layout CSS Grid
-- **Footer** con imagen de fondo y overlay pseudo-elemento
-- **100% responsive** — adaptado para mobile, tablet y desktop
-- **Sin frameworks** — HTML5 semántico + CSS puro
+- Hero animado con tipografía display y gradiente de marca
+- Slider infinito construido solo con CSS `@keyframes`, sin JavaScript
+- Cards del menú con efecto hover scale + translateY
+- Grid asimétrico para la sección de experiencias
+- Formulario de reserva con layout CSS Grid
+- Footer con imagen de fondo y overlay con pseudo-elemento
+- 100% responsive — mobile, tablet y desktop
+- Sin frameworks — HTML5 semántico + CSS puro
 
 ---
 
@@ -44,10 +37,6 @@ kiddo-burger/
 ├── index.html        # Página principal
 ├── styles.css        # Todos los estilos
 └── img/              # Imágenes y assets
-    ├── kiddo_encabezado.svg
-    ├── logo.png
-    ├── bg1.jpg ... bg8.jpg
-    └── ...
 ```
 
 ---
@@ -55,8 +44,8 @@ kiddo-burger/
 ## 🚀 Correr localmente
 
 ```bash
-git clone https://github.com/tu-usuario/kiddo-burger.git
-cd kiddo-burger
+git clone https://github.com/Lexsa21/Proyecto-Kiddo.git
+cd Proyecto-Kiddo
 # Abrí index.html en tu navegador, o usá un servidor local:
 npx serve .
 ```
@@ -75,6 +64,6 @@ El sitio está adaptado para tres breakpoints:
 
 ## 👤 Autor
 
-Hecho con ❤️ por **[Axel]**
+**Axel Estrada**
 
-[LinkedIn](https://linkedin.com/in/axeelestrada) · [GitHub](https://github.com/Lexsa21)
+[LinkedIn](https://www.linkedin.com/in/axeelestrada) · [GitHub](https://github.com/Lexsa21)
